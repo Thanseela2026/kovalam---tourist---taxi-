@@ -56,7 +56,7 @@ header{
 
     color:white;
     text-align:center;
-    padding:180px 20px;
+    padding:120px 20px;
 }
 
 h1{
@@ -65,12 +65,17 @@ h1{
 }
 @media (max-width:768px){
 
-    h1{
-        font-size:40px;
+    header{
+        padding:80px 15px;
     }
 
-    p{
-        font-size:20px;
+    h1{
+        font-size:36px;
+        line-height:1.2;
+    }
+
+    header p{
+        font-size:18px;
     }
 
 }
@@ -109,21 +114,29 @@ header a:hover{
 }
 
 .service-box{
-    display:flex;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
     gap:30px;
-    justify-content:center;
-    flex-wrap:wrap;
+    padding:20px;
+    align-items:stretch;
 }
 
 .card{
     background:white;
-    width:300px;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    min-height:220px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
     transition:0.3s;
 }
+@media(max-width:768px){
 
+    .service-box{
+        grid-template-columns:1fr;
+    }
+
+}
 .card:hover{
     transform:translateY(-10px);
 }
@@ -414,7 +427,7 @@ nav{
     align-items:center;
     gap:15px;
     color:white;
-    font-size:28px;
+    font-size:24px;
     font-weight:bold;
     white-space:nowrap;
 }
@@ -532,18 +545,37 @@ nav ul{
 
     nav{
         flex-direction:column;
-        padding:15px;
+        padding:10px;
     }
 
     .logo{
         margin-bottom:10px;
+        font-size:22px;
     }
 
     nav ul{
-        flex-direction:column;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:center;
         gap:15px;
+        padding:0;
+    }
+
+    nav ul li a{
+        font-size:16px;
+    }
+
+    header h1{
+        font-size:36px;
         text-align:center;
     }
+
+    header p{
+        font-size:18px;
+        text-align:center;
+    }
+
+}
 
     header h1{
         font-size:36px;
@@ -556,6 +588,50 @@ nav ul{
 
     .service-box{
         flex-direction:column;
+    }
+
+}
+#about{
+    padding:80px 10%;
+    text-align:center;
+    color:white;
+
+    background-image:url("aboutbg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+#about h2{
+    font-size:40px;
+    color:#ffc107;
+    margin-bottom:30px;
+    text-shadow:2px 2px 5px black;
+}
+
+#about p{
+    max-width:900px;
+    margin:20px auto;
+    font-size:20px;
+    line-height:1.8;
+    color:white;
+    text-shadow:1px 1px 3px black;
+}
+@media(max-width:768px){
+
+    #about{
+        padding:50px 20px;
+    }
+
+    #about h2{
+        font-size:32px;
+        text-align:center;
+    }
+
+    #about p{
+        font-size:17px;
+        line-height:1.6;
+        text-align:center;
     }
 
 }
