@@ -599,9 +599,18 @@ nav ul{
         padding:0 10px;
     }
 
-    .service-box{
-        flex-direction:column;
+     .service-box{
+        grid-template-columns:1fr;
+        width:100%;
+        padding:10px;
     }
+
+    .card{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+}
 
 }
 
@@ -650,6 +659,25 @@ nav ul{
         line-height:1.6;
         text-align:center;
     }
+    @media(max-width:768px){
+
+    .service-box{
+        grid-template-columns:1fr;
+        padding:10px;
+        width:100%;
+    }
+
+    .card{
+        width:100%;
+        box-sizing:border-box;
+        overflow-wrap:break-word;
+    }
+
+    .card p{
+        font-size:16px;
+    }
+
+}
 
 }
 .fleet-placeholder{
