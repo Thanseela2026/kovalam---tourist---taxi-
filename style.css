@@ -153,6 +153,9 @@ header a:hover{
     background:#f8f9fa;
     text-align:center;
 }
+#fleet h2{
+    color:#0A3D62;
+}
 
 .fleet-card{
     max-width:700px;
@@ -189,8 +192,8 @@ header a:hover{
     font-weight:bold;
 }
 .fleet-card p{
-    font-size:20px;
-    line-height:1.8;
+    font-size:18px;
+    line-height:1.7;
     text-align:center;
 }
 .fleet-card ul{
@@ -322,31 +325,7 @@ form button:hover{
 .review-card h4{
     color:#0A3D62;
 }
-#gallery{
-    padding:80px 10%;
-    text-align:center;
-    background:white;
-}
 
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    margin-top:40px;
-}
-
-.gallery img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:12px;
-    box-shadow:0 8px 20px rgba(0,0,0,.2);
-    transition:.3s;
-}
-
-.gallery img:hover{
-    transform:scale(1.05);
-}
 #contact{
     padding:80px 10%;
     background:#0A3D62;
@@ -592,17 +571,20 @@ nav ul{
 
 }
 #about{
+    background:red !important;
+}
+#about{
     padding:80px 10%;
+    min-height:500px;
     text-align:center;
     color:white;
 
     background:
-    linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+    linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
     url("aboutbg.jpg");
 
     background-size:cover;
     background-position:center;
-    background-repeat:no-repeat;
 }
 
 #about h2{
@@ -637,4 +619,16 @@ nav ul{
         text-align:center;
     }
 
+}
+.fleet-placeholder{
+    height:250px;
+    background:#f1f1f1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
