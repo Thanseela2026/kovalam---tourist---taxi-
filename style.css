@@ -724,7 +724,7 @@ nav ul{
 
     .card{
         width:100%;
-        padding:25px 15px;
+        padding:25px 10px;
         margin-bottom:25px;
         box-sizing:border-box;
     }
@@ -733,6 +733,9 @@ nav ul{
     }
 
 .card p{
+    font-size:15px;
+    line-height:1.6;
+    padding:0 10px;
     overflow-wrap: break-word;
     word-wrap: break-word;
     white-space: normal;
