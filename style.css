@@ -670,6 +670,12 @@ nav ul{
         box-sizing:border-box;
         overflow-wrap:break-word;
     }
+    .card h3{
+        font-size:18px;
+        line-height:1.4;
+    }
+
+}
 
     .card p{
         font-size:16px;
@@ -730,4 +736,12 @@ nav ul{
     overflow-wrap: break-word;
     word-wrap: break-word;
     white-space: normal;
+}
+.card h3{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:8px;
+    text-align:center;
 }
