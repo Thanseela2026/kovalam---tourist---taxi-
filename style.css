@@ -620,12 +620,10 @@ nav ul{
     text-align:center;
     color:white;
 
-    background:url("aboutbg.jpg");
-background-size:cover;
-background-position:center;
-
+    background-image:url("aboutbg.jpg");
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
 }
 
 #about h2{
