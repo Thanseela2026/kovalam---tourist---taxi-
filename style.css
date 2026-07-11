@@ -701,3 +701,33 @@ nav ul{
     background-position:center !important;
     background-repeat:no-repeat !important;
 }
+@media(max-width:768px){
+
+    #services{
+        width:100%;
+        padding:50px 15px;
+        overflow:hidden;
+    }
+
+    .service-box{
+        display:block;
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+
+    .card{
+        width:100%;
+        padding:25px 15px;
+        margin-bottom:25px;
+        box-sizing:border-box;
+    }
+.card h3{
+        font-size:20px;
+    }
+
+.card p{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+}
