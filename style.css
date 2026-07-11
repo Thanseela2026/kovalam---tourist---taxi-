@@ -230,8 +230,8 @@ header a:hover{
 }
 .whatsapp{
     position:fixed;
-    bottom:20px;
-    right:20px;
+    bottom:15px;
+    right:15px;
     width:60px;
     height:60px;
      box-sizing:border-box;
@@ -728,9 +728,6 @@ nav ul{
         margin-bottom:25px;
         box-sizing:border-box;
     }
-.card h3{
-        font-size:20px;
-    }
 
 .card p{
     font-size:15px;
@@ -741,6 +738,7 @@ nav ul{
     white-space: normal;
 }
 .card h3{
+    font-size:18px;
     display:flex;
     justify-content:center;
     align-items:center;
