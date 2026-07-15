@@ -6,7 +6,7 @@ html{
     scroll-behavior:smooth;
 }
 nav{
-    position:sticky;
+    position:fixed;
     top:0;
     left:0;
     width:100%;
@@ -17,20 +17,26 @@ nav{
     align-items:center;
     padding:10px 60px;
     box-sizing:border-box;
-    z-index:1000;
-    background: rgba(0,0,0,0.85);
+    z-index:99999;
     box-shadow:0 2px 15px rgba(0,0,0,0.3);
 }
 
 .logo:hover{
     color:#ffc107;
 }
-
 nav ul{
+
     list-style:none;
+
     display:flex;
-    gap:25px;
-} 
+
+    gap:30px;
+
+    margin:0;
+
+    padding:0;
+
+}
 
 nav ul li a{
     color:white;
@@ -45,6 +51,7 @@ nav ul li a:hover{
     
 body{
     margin:0;
+    padding-top:80px;
     font-family:Arial,sans-serif;
     background:#f4f4f4;
 }
@@ -135,6 +142,7 @@ header a:hover{
 }
 
 .card{
+
     background:white;
     padding:30px;
     border-radius:15px;
@@ -230,27 +238,9 @@ header a:hover{
 .whatsapp:hover{
     transform:scale(1.1);
 }
-.call-btn{
-    position:fixed;
-    bottom:90px;
-    right:20px;
-    width:60px;
-    height:60px;
-    background:#0A3D62;
-    color:white;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:28px;
-    text-decoration:none;
-    box-shadow:0 5px 15px rgba(0,0,0,.3);
-    transition:.3s;
-}
 
-.call-btn:hover{
-    transform:scale(1.1);
-}
+
+
 #booking{
     padding:120px 10% 80px;
     background:
@@ -407,36 +397,16 @@ nav ul li a:hover{
     transition:0.3s;
 }
 
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:10px 60px;
-    background:#111;
-}
-
 .logo{
     display:flex;
     align-items:center;
-    gap:15px;
-    color:white;
-    font-size:24px;
-    font-weight:bold;
-    white-space:nowrap;
 }
 
 .logo img{
     width:65px;
-    height:65px;
+    height:65;
     object-fit:contain;
-    border-radius:50%;
-}
-
-nav ul{
-    display:flex;
-    gap:30px;
-    list-style:none;
-    margin:0;
+    border-radius:50;
 }
 
 /* Booking Form */
@@ -551,7 +521,7 @@ nav ul{
         flex-wrap:wrap;
         justify-content:center;
         gap:15px;
-        padding:0;
+             padding:0;
     }
 
     nav ul li a{
@@ -726,3 +696,45 @@ nav ul{
     gap:8px;
     text-align:center;
 }
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.about-image img {
+    width: 400px;
+    border-radius: 15px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+@media(max-width:768px){
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+}
+.logo img {
+    width: 65px;
+    height: 65;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+    
